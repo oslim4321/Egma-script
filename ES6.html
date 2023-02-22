@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        //  ARROW FUNCTION
+
+        var greetings=()=>'hello world'
+        console.log(greetings())
+
+
+
+        var greet=(params)=>{
+            return params
+
+        };
+        console.log(greet('i love programming'))
+
+
+            //DATA DESTRUCTIONING
+        //object destructio
+        let obj={name:'selim', age:'10', school:'SQI', hobby:['coding', 'sleeping','']}
+
+        let {name,age,school, hobby:[h1,h2]}=obj
+
+        console.log(name)
+
+        //arry desruction
+        let arr=[10,20,40,20,92,81]
+
+        let [a,b,c,,,f]=arr
+
+console.log(c)
+
+
+
+
+
+
+ let Goeries={frult:['apple','mango', 'orange','cashew'], nam:'samad', age:'31', hobies:['football', 'coding', 'boxing', 'sleeping']}
+
+
+console.log(Goeries.name,Goeries.age,Goeries.hobies)
+
+let{frult,nam,hobies}=Goeries
+
+let [f1,f2,f3,f4]=frult
+let[p,p2,p3,p4,]=hobies
+
+
+console.log(frult)
+// console.log(p)
+// console.log(f1)
+
+
+
+
+
+        //ANOTHER EXAMPLE
+        let great=({cream,iceberg})=> {
+        return cream +" "+  iceberg
+        }
+
+        console.log(great({cream:'available', iceberg:'a Bit', soap:'market'}))
+
+
+
+
+    </script>
+</body>
+</html>
